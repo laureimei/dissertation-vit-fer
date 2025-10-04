@@ -1,0 +1,114 @@
+2025-07-17 18:15:12,953 - INFO - Class weights: tensor([0.7648, 2.6952, 1.7326, 0.4886, 5.8037, 0.6588, 0.9927],
+       device='cuda:0')
+2025-07-17 18:15:13,248 - INFO - Trainer initialized. Experiment: multimodal_vit_fer_combined_20250717_181507
+2025-07-17 18:15:13,249 - INFO - Save directory: ./experiments/multimodal_vit_fer_combined_20250717_181507
+2025-07-17 18:15:13,250 - INFO - Training mode: combined
+2025-07-17 18:15:13,251 - INFO - Fusion strategy: early
+2025-07-17 18:15:13,252 - INFO - Fusion type: concat
+2025-07-17 18:15:13,252 - INFO - Fusion layer: feature
+2025-07-17 18:15:13,253 - INFO - Training samples: 6,622
+2025-07-17 18:15:13,254 - INFO - Test samples: 1,656
+2025-07-17 18:15:13,255 - INFO - Use augmented data: True
+2025-07-17 18:15:13,256 - INFO - Training configuration: {
+  "data_dir": "Data",
+  "output_dir": "./experiments",
+  "mode": "combined",
+  "fusion_strategy": "early",
+  "fusion_type": "concat",
+  "fusion_layer": "feature",
+  "model_name": "google/vit-base-patch16-224-in21k",
+  "num_classes": 7,
+  "dropout_rate": 0.1,
+  "freeze_backbone": false,
+  "use_gradient_checkpointing": false,
+  "batch_size": 32,
+  "num_epochs": 10,
+  "learning_rate": 5e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 500,
+  "gradient_clip_norm": 1.0,
+  "image_size": 224,
+  "num_workers": 4,
+  "val_split": 0.2,
+  "use_augmented": true,
+  "use_class_weights": true,
+  "early_stopping_patience": 10,
+  "early_stopping_min_delta": 0.001,
+  "use_wandb": false,
+  "wandb_project": "multimodal-fer"
+}
+2025-07-17 18:15:13,256 - INFO - Starting training for 10 epochs
+2025-07-17 18:15:13,257 - INFO - 
+=== Epoch 1/10 ===
+2025-07-17 18:35:01,205 - INFO - Train - Loss: 1.9604, Acc: 0.2363, F1: 0.2332, Precision: 0.2371, Recall: 0.2363
+2025-07-17 18:35:01,206 - INFO - Val   - Loss: 1.6392, Acc: 0.3291, F1: 0.3048, Precision: 0.3182, Recall: 0.3291
+2025-07-17 18:35:07,024 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_combined_20250717_181507/best_model.pth
+2025-07-17 18:35:07,026 - INFO - New best model saved with F1: 0.3048
+2025-07-17 18:35:07,027 - INFO - 
+=== Epoch 2/10 ===
+2025-07-17 18:39:11,314 - INFO - Train - Loss: 1.6069, Acc: 0.3518, F1: 0.3296, Precision: 0.3369, Recall: 0.3518
+2025-07-17 18:39:11,317 - INFO - Val   - Loss: 1.4830, Acc: 0.3744, F1: 0.3444, Precision: 0.3776, Recall: 0.3744
+2025-07-17 18:39:17,214 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_combined_20250717_181507/best_model.pth
+2025-07-17 18:39:17,222 - INFO - New best model saved with F1: 0.3444
+2025-07-17 18:39:17,223 - INFO - 
+=== Epoch 3/10 ===
+2025-07-17 18:43:37,996 - INFO - Train - Loss: 1.4474, Acc: 0.4082, F1: 0.3910, Precision: 0.4000, Recall: 0.4082
+2025-07-17 18:43:37,997 - INFO - Val   - Loss: 1.3222, Acc: 0.4589, F1: 0.4462, Precision: 0.4815, Recall: 0.4589
+2025-07-17 18:43:44,689 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_combined_20250717_181507/best_model.pth
+2025-07-17 18:43:44,691 - INFO - New best model saved with F1: 0.4462
+2025-07-17 18:43:44,694 - INFO - 
+=== Epoch 4/10 ===
+2025-07-17 18:48:06,884 - INFO - Train - Loss: 1.3120, Acc: 0.4540, F1: 0.4426, Precision: 0.4486, Recall: 0.4540
+2025-07-17 18:48:06,885 - INFO - Val   - Loss: 1.2041, Acc: 0.5018, F1: 0.4982, Precision: 0.5149, Recall: 0.5018
+2025-07-17 18:48:12,598 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_combined_20250717_181507/best_model.pth
+2025-07-17 18:48:12,599 - INFO - New best model saved with F1: 0.4982
+2025-07-17 18:48:12,600 - INFO - 
+=== Epoch 5/10 ===
+2025-07-17 18:52:33,871 - INFO - Train - Loss: 1.1845, Acc: 0.5106, F1: 0.5030, Precision: 0.5072, Recall: 0.5106
+2025-07-17 18:52:33,872 - INFO - Val   - Loss: 1.0964, Acc: 0.5393, F1: 0.5297, Precision: 0.5353, Recall: 0.5393
+2025-07-17 18:52:39,431 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_combined_20250717_181507/best_model.pth
+2025-07-17 18:52:39,437 - INFO - New best model saved with F1: 0.5297
+2025-07-17 18:52:39,438 - INFO - 
+=== Epoch 6/10 ===
+2025-07-17 18:57:00,833 - INFO - Train - Loss: 1.1031, Acc: 0.5397, F1: 0.5341, Precision: 0.5372, Recall: 0.5397
+2025-07-17 18:57:00,834 - INFO - Val   - Loss: 1.0552, Acc: 0.5700, F1: 0.5733, Precision: 0.6105, Recall: 0.5700
+2025-07-17 18:57:06,748 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_combined_20250717_181507/best_model.pth
+2025-07-17 18:57:06,750 - INFO - New best model saved with F1: 0.5733
+2025-07-17 18:57:06,752 - INFO - 
+=== Epoch 7/10 ===
+2025-07-17 19:01:27,653 - INFO - Train - Loss: 1.0432, Acc: 0.5663, F1: 0.5618, Precision: 0.5643, Recall: 0.5663
+2025-07-17 19:01:27,655 - INFO - Val   - Loss: 0.9992, Acc: 0.5900, F1: 0.5885, Precision: 0.6073, Recall: 0.5900
+2025-07-17 19:01:34,177 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_combined_20250717_181507/best_model.pth
+2025-07-17 19:01:34,180 - INFO - New best model saved with F1: 0.5885
+2025-07-17 19:01:34,183 - INFO - 
+=== Epoch 8/10 ===
+2025-07-17 19:05:54,850 - INFO - Train - Loss: 0.9954, Acc: 0.5851, F1: 0.5806, Precision: 0.5833, Recall: 0.5851
+2025-07-17 19:05:54,851 - INFO - Val   - Loss: 0.9696, Acc: 0.6075, F1: 0.6074, Precision: 0.6242, Recall: 0.6075
+2025-07-17 19:05:59,340 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_combined_20250717_181507/best_model.pth
+2025-07-17 19:05:59,342 - INFO - New best model saved with F1: 0.6074
+2025-07-17 19:05:59,343 - INFO - 
+=== Epoch 9/10 ===
+2025-07-17 19:10:21,328 - INFO - Train - Loss: 0.9828, Acc: 0.5977, F1: 0.5944, Precision: 0.5969, Recall: 0.5977
+2025-07-17 19:10:21,329 - INFO - Val   - Loss: 0.9660, Acc: 0.6087, F1: 0.6076, Precision: 0.6238, Recall: 0.6087
+2025-07-17 19:10:25,777 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_combined_20250717_181507/best_model.pth
+2025-07-17 19:10:25,780 - INFO - New best model saved with F1: 0.6076
+2025-07-17 19:10:25,781 - INFO - 
+=== Epoch 10/10 ===
+2025-07-17 19:14:48,015 - INFO - Train - Loss: 0.9651, Acc: 0.6006, F1: 0.5983, Precision: 0.6034, Recall: 0.6006
+2025-07-17 19:14:48,016 - INFO - Val   - Loss: 0.9623, Acc: 0.6087, F1: 0.6067, Precision: 0.6210, Recall: 0.6087
+2025-07-17 19:14:52,300 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_combined_20250717_181507/last_model.pth
+2025-07-17 19:14:56,064 - INFO - === DETAILED EVALUATION RESULTS ===
+2025-07-17 19:14:56,066 - INFO - Overall Accuracy: 0.6087
+2025-07-17 19:14:56,067 - INFO - Macro F1-Score: 0.5527
+2025-07-17 19:14:56,068 - INFO - Micro F1-Score: 0.6087
+2025-07-17 19:14:56,069 - INFO - Weighted F1-Score: 0.6067
+2025-07-17 19:14:56,070 - INFO - Per-class Accuracy:
+2025-07-17 19:14:56,071 - INFO -   angry: 0.6811
+2025-07-17 19:14:56,072 - INFO -   disgust: 0.5714
+2025-07-17 19:14:56,073 - INFO -   fear: 0.5822
+2025-07-17 19:14:56,074 - INFO -   happy: 0.5756
+2025-07-17 19:14:56,075 - INFO -   neutral: 0.1628
+2025-07-17 19:14:56,076 - INFO -   sad: 0.7242
+2025-07-17 19:14:56,077 - INFO -   surprised: 0.5304
+2025-07-17 19:14:56,077 - INFO - Final evaluation completed with comprehensive metrics
+2025-07-17 19:14:56,092 - INFO - Training completed!

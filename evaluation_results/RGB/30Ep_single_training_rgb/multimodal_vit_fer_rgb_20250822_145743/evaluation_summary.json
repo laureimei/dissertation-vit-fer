@@ -1,0 +1,17 @@
+{
+  "experiment_name": "multimodal_vit_fer_rgb_20250822_145743",
+  "mode": "rgb",
+  "overall_accuracy": 0.9777724087943948,
+  "macro_f1_score": 0.9702103451795537,
+  "micro_f1_score": 0.9777724087943948,
+  "weighted_f1_score": 0.9776988197895338,
+  "per_class_accuracy": {
+    "angry": 0.9853658536585366,
+    "disgust": 0.9310344827586207,
+    "fear": 0.9591280653950953,
+    "happy": 0.9865092748735245,
+    "neutral": 0.9010989010989011,
+    "sad": 0.9895712630359212,
+    "surprised": 0.9741379310344828
+  }
+}

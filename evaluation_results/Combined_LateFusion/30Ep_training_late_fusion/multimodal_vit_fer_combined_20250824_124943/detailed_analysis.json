@@ -1,0 +1,46 @@
+{
+  "overall_metrics": {
+    "accuracy": 0.9625603864734299,
+    "precision": 0.9628054092188684,
+    "recall": 0.9625603864734299,
+    "f1_score": 0.9625159893435863
+  },
+  "class_performance": {
+    "angry": {
+      "precision": 0.9470198675496688,
+      "recall": 0.959731543624161,
+      "f1_score": 0.9533333333333334
+    },
+    "disgust": {
+      "precision": 1.0,
+      "recall": 0.9795918367346939,
+      "f1_score": 0.9896907216494846
+    },
+    "fear": {
+      "precision": 0.9583333333333334,
+      "recall": 0.9857142857142858,
+      "f1_score": 0.971830985915493
+    },
+    "happy": {
+      "precision": 0.9662447257383966,
+      "recall": 0.9346938775510204,
+      "f1_score": 0.950207468879668
+    },
+    "neutral": {
+      "precision": 0.8571428571428571,
+      "recall": 0.8571428571428571,
+      "f1_score": 0.8571428571428571
+    },
+    "sad": {
+      "precision": 0.9513513513513514,
+      "recall": 0.9832402234636871,
+      "f1_score": 0.967032967032967
+    },
+    "surprised": {
+      "precision": 0.9917355371900827,
+      "recall": 0.9836065573770492,
+      "f1_score": 0.9876543209876543
+    }
+  },
+  "classification_report": "              precision    recall  f1-score   support\n\n       angry     0.9470    0.9597    0.9533       149\n     disgust     1.0000    0.9796    0.9897        49\n        fear     0.9583    0.9857    0.9718        70\n       happy     0.9662    0.9347    0.9502       245\n     neutral     0.8571    0.8571    0.8571        14\n         sad     0.9514    0.9832    0.9670       179\n   surprised     0.9917    0.9836    0.9877       122\n\n    accuracy                         0.9626       828\n   macro avg     0.9531    0.9548    0.9538       828\nweighted avg     0.9628    0.9626    0.9625       828\n"
+}

@@ -1,0 +1,17 @@
+{
+  "experiment_name": "multimodal_vit_fer_thermal_20250822_193734",
+  "mode": "thermal",
+  "overall_accuracy": 0.9876781831360232,
+  "macro_f1_score": 0.9908035365306703,
+  "micro_f1_score": 0.9876781831360232,
+  "weighted_f1_score": 0.9876734836029021,
+  "per_class_accuracy": {
+    "angry": 0.9872448979591837,
+    "disgust": 1.0,
+    "fear": 0.9969879518072289,
+    "happy": 0.9801816680429397,
+    "neutral": 0.991304347826087,
+    "sad": 1.0,
+    "surprised": 0.975
+  }
+}

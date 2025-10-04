@@ -1,0 +1,111 @@
+2025-07-15 08:45:37,508 - INFO - Class weights: tensor([0.7588, 2.6309, 1.7065, 0.4914, 5.9426, 0.6679, 0.9847],
+       device='cuda:0')
+2025-07-15 08:45:37,614 - INFO - Trainer initialized. Experiment: multimodal_vit_fer_thermal_20250715_084533
+2025-07-15 08:45:37,615 - INFO - Save directory: ./experiments/multimodal_vit_fer_thermal_20250715_084533
+2025-07-15 08:45:37,616 - INFO - Training mode: thermal
+2025-07-15 08:45:37,617 - INFO - Training samples: 16,556
+2025-07-15 08:45:37,617 - INFO - Test samples: 4,139
+2025-07-15 08:45:37,618 - INFO - Use augmented data: True
+2025-07-15 08:45:37,619 - INFO - Training configuration: {
+  "data_dir": "Data",
+  "output_dir": "./experiments",
+  "mode": "thermal",
+  "fusion_strategy": "early",
+  "fusion_type": "concat",
+  "fusion_layer": "feature",
+  "model_name": "google/vit-base-patch16-224-in21k",
+  "num_classes": 7,
+  "dropout_rate": 0.1,
+  "freeze_backbone": false,
+  "use_gradient_checkpointing": false,
+  "batch_size": 32,
+  "num_epochs": 10,
+  "learning_rate": 5e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 500,
+  "gradient_clip_norm": 1.0,
+  "image_size": 224,
+  "num_workers": 4,
+  "val_split": 0.2,
+  "use_augmented": true,
+  "use_class_weights": true,
+  "early_stopping_patience": 10,
+  "early_stopping_min_delta": 0.001,
+  "use_wandb": false,
+  "wandb_project": "multimodal-fer"
+}
+2025-07-15 08:45:37,620 - INFO - Starting training for 10 epochs
+2025-07-15 08:45:37,621 - INFO - 
+=== Epoch 1/10 ===
+2025-07-15 08:55:39,434 - INFO - Train - Loss: 1.5512, Acc: 0.4053, F1: 0.3952, Precision: 0.4041, Recall: 0.4053
+2025-07-15 08:55:39,435 - INFO - Val   - Loss: 0.9869, Acc: 0.5963, F1: 0.5816, Precision: 0.6143, Recall: 0.5963
+2025-07-15 08:55:45,004 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_thermal_20250715_084533/best_model.pth
+2025-07-15 08:55:45,008 - INFO - New best model saved with F1: 0.5816
+2025-07-15 08:55:45,010 - INFO - 
+=== Epoch 2/10 ===
+2025-07-15 09:05:10,868 - INFO - Train - Loss: 0.7283, Acc: 0.7059, F1: 0.7049, Precision: 0.7070, Recall: 0.7059
+2025-07-15 09:05:10,869 - INFO - Val   - Loss: 0.5180, Acc: 0.7927, F1: 0.7886, Precision: 0.8040, Recall: 0.7927
+2025-07-15 09:05:16,533 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_thermal_20250715_084533/best_model.pth
+2025-07-15 09:05:16,534 - INFO - New best model saved with F1: 0.7886
+2025-07-15 09:05:16,535 - INFO - 
+=== Epoch 3/10 ===
+2025-07-15 09:14:58,533 - INFO - Train - Loss: 0.4455, Acc: 0.8240, F1: 0.8239, Precision: 0.8244, Recall: 0.8240
+2025-07-15 09:14:58,534 - INFO - Val   - Loss: 0.3650, Acc: 0.8575, F1: 0.8592, Precision: 0.8658, Recall: 0.8575
+2025-07-15 09:15:04,001 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_thermal_20250715_084533/best_model.pth
+2025-07-15 09:15:04,003 - INFO - New best model saved with F1: 0.8592
+2025-07-15 09:15:04,006 - INFO - 
+=== Epoch 4/10 ===
+2025-07-15 09:24:45,830 - INFO - Train - Loss: 0.3182, Acc: 0.8748, F1: 0.8749, Precision: 0.8752, Recall: 0.8748
+2025-07-15 09:24:45,831 - INFO - Val   - Loss: 0.2781, Acc: 0.8954, F1: 0.8941, Precision: 0.8958, Recall: 0.8954
+2025-07-15 09:24:52,799 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_thermal_20250715_084533/best_model.pth
+2025-07-15 09:24:52,801 - INFO - New best model saved with F1: 0.8941
+2025-07-15 09:24:52,802 - INFO - 
+=== Epoch 5/10 ===
+2025-07-15 09:34:35,996 - INFO - Train - Loss: 0.2367, Acc: 0.9076, F1: 0.9076, Precision: 0.9079, Recall: 0.9076
+2025-07-15 09:34:35,997 - INFO - Val   - Loss: 0.2129, Acc: 0.9152, F1: 0.9155, Precision: 0.9173, Recall: 0.9152
+2025-07-15 09:34:39,888 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_thermal_20250715_084533/best_model.pth
+2025-07-15 09:34:39,890 - INFO - New best model saved with F1: 0.9155
+2025-07-15 09:34:39,891 - INFO - 
+=== Epoch 6/10 ===
+2025-07-15 09:44:23,767 - INFO - Train - Loss: 0.1995, Acc: 0.9238, F1: 0.9238, Precision: 0.9238, Recall: 0.9238
+2025-07-15 09:44:23,772 - INFO - Val   - Loss: 0.1834, Acc: 0.9295, F1: 0.9299, Precision: 0.9313, Recall: 0.9295
+2025-07-15 09:44:32,700 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_thermal_20250715_084533/best_model.pth
+2025-07-15 09:44:32,702 - INFO - New best model saved with F1: 0.9299
+2025-07-15 09:44:32,703 - INFO - 
+=== Epoch 7/10 ===
+2025-07-15 09:54:16,616 - INFO - Train - Loss: 0.1618, Acc: 0.9397, F1: 0.9397, Precision: 0.9398, Recall: 0.9397
+2025-07-15 09:54:16,617 - INFO - Val   - Loss: 0.1554, Acc: 0.9449, F1: 0.9449, Precision: 0.9452, Recall: 0.9449
+2025-07-15 09:54:20,837 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_thermal_20250715_084533/best_model.pth
+2025-07-15 09:54:20,838 - INFO - New best model saved with F1: 0.9449
+2025-07-15 09:54:20,841 - INFO - 
+=== Epoch 8/10 ===
+2025-07-15 10:04:03,161 - INFO - Train - Loss: 0.1464, Acc: 0.9463, F1: 0.9464, Precision: 0.9465, Recall: 0.9463
+2025-07-15 10:04:03,162 - INFO - Val   - Loss: 0.1513, Acc: 0.9439, F1: 0.9440, Precision: 0.9444, Recall: 0.9439
+2025-07-15 10:04:03,165 - INFO - 
+=== Epoch 9/10 ===
+2025-07-15 10:13:28,970 - INFO - Train - Loss: 0.1336, Acc: 0.9483, F1: 0.9483, Precision: 0.9483, Recall: 0.9483
+2025-07-15 10:13:28,971 - INFO - Val   - Loss: 0.1449, Acc: 0.9461, F1: 0.9461, Precision: 0.9462, Recall: 0.9461
+2025-07-15 10:13:34,238 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_thermal_20250715_084533/best_model.pth
+2025-07-15 10:13:34,240 - INFO - New best model saved with F1: 0.9461
+2025-07-15 10:13:34,241 - INFO - 
+=== Epoch 10/10 ===
+2025-07-15 10:23:17,353 - INFO - Train - Loss: 0.1265, Acc: 0.9541, F1: 0.9541, Precision: 0.9543, Recall: 0.9541
+2025-07-15 10:23:17,354 - INFO - Val   - Loss: 0.1442, Acc: 0.9471, F1: 0.9472, Precision: 0.9475, Recall: 0.9471
+2025-07-15 10:23:22,917 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_thermal_20250715_084533/best_model.pth
+2025-07-15 10:23:22,919 - INFO - New best model saved with F1: 0.9472
+2025-07-15 10:23:31,252 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_thermal_20250715_084533/last_model.pth
+2025-07-15 10:23:35,521 - INFO - === DETAILED EVALUATION RESULTS ===
+2025-07-15 10:23:35,524 - INFO - Overall Accuracy: 0.9471
+2025-07-15 10:23:35,526 - INFO - Macro F1-Score: 0.9532
+2025-07-15 10:23:35,529 - INFO - Micro F1-Score: 0.9471
+2025-07-15 10:23:35,533 - INFO - Weighted F1-Score: 0.9472
+2025-07-15 10:23:35,535 - INFO - Per-class Accuracy:
+2025-07-15 10:23:35,537 - INFO -   angry: 0.9349
+2025-07-15 10:23:35,539 - INFO -   disgust: 0.9903
+2025-07-15 10:23:35,542 - INFO -   fear: 0.9709
+2025-07-15 10:23:35,544 - INFO -   happy: 0.9302
+2025-07-15 10:23:35,547 - INFO -   neutral: 0.9402
+2025-07-15 10:23:35,549 - INFO -   sad: 0.9908
+2025-07-15 10:23:35,552 - INFO -   surprised: 0.9064
+2025-07-15 10:23:35,554 - INFO - Final evaluation completed with comprehensive metrics
+2025-07-15 10:23:56,108 - INFO - Training completed!
