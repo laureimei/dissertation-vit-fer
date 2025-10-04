@@ -19,7 +19,7 @@
 A comprehensive implementation of Vision Transformer (ViT) for Facial Expression Recognition (FER) supporting RGB, Thermal, and Multimodal (RGB+Thermal) modalities with multiple fusion strategies.
 This project uses a pre-trained ViT model ```google/vit-base-patch16-224-in21k``` source from [Hugging Face](https://huggingface.co/docs/transformers/en/model_doc/vit)
 
-The complete architecture of the Vision Transformer can be found in ```docs``` folder and look for [VIT_ARCHITECTURE.md](https://gitlab.uwe.ac.uk/lmr2-sanejo/group-4-dissertation/-/blob/feature4/vit_model/docs/VIT_ARCHITECTURE.md?ref_type=heads)
+The complete architecture of the Vision Transformer can be found in ```docs``` folder and look for [VIT_ARCHITECTURE.md](https://github.com/laureimei/dissertation-vit-fer/blob/main/docs/VIT_ARCHITECTURE.md)
 
 ## Features
 - **Multi-modal Support**: RGB-only, Thermal-only, and Combined (RGB+Thermal) modes
